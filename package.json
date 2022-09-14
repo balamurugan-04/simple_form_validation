@@ -1,0 +1,31 @@
+{
+  "name": "better-onsubmit",
+  "version": "2.0.1",
+  "description": "💾 Get an HTML form values as a JS object",
+  "repository": "git@github.com:mvoloskov/better-onsubmit.git",
+  "main": "src/index.js",
+  "author": "mvoloskov",
+  "license": "BSL-1.0",
+  "keywords": [
+    "json",
+    "html-form",
+    "small-tools",
+    "form-to-object"
+  ],
+  "files": [
+    "/src"
+  ],
+  "scripts": {
+    "build-iife": "rollup -c",
+    "test": "exit 0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build-iife && git add dist"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "rollup": "^2.26.10"
+  }
+}
